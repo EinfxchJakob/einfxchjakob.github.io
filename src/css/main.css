@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #121212;
+  color: #ccc;
+  text-align: center;
+}
+
+.nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #121212;
+  box-shadow: #000 0px 2px 4px;
+}
+
+.grad-bar {
+  display: none;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradbar 15s ease infinite;
+  -moz-animation: gradbar 15s ease infinite;
+  animation: gradbar 15s ease infinite;
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes gradbar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradbar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradbar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(
+      136deg,
+      rgb(68, 132, 206),
+      rgb(26, 215, 192),
+      rgb(255, 155, 17),
+      rgb(155, 89, 182)
+    )
+    0% 0% / 600% 600%; */
+
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #191b29 74%);
+  animation: BackgroundAnimation 40s ease infinite alternate;
+}
+
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 10%;
+  }
+  50% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.home {
+  text-align: center;
+  color: #121212;
+}
+
+.home .wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home .wrapper .container {
+  z-index: 10;
+  pointer-events: none;
+}
+
+.home .name {
+  font-size: 6rem;
+  font-family: "Komika Axis"<!--, sans-serif-->;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #ccc 0%, #ccc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headline {
+  margin-top: 6vh;
+  font-family: "Komika Axis", cursive;
+  font-size: 0rem;
+  /* font-size: 1.65rem; */
+  color: white;
+}
+
+#particles {
+  width: 100%;
+  height: 100vh;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.container.social {
+  margin-top: 6vh;
+}
+
+.container.social a {
+  text-decoration: none;
+}
+
+.social .fab {
+  font-size: 2.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.8s;
+  margin: 4px;
+  color: #121212;
+  pointer-events: all;
+  transition: all 0.3s;
+  background-image:linear-gradient(147deg, #000000 0%, #ccc 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background-color: #000000; */
+/* background-image: linear-gradient(147deg, #000000 0%, #ccc 74%); */
+}
+
+.social .fab:hover {
+  color: white;
+}
+
+footer div {
+  width: 90%;
+  margin: 20px auto;
+}
+
+footer div p {
+  font-size: 14px;
+}
+
+footer div a {
+  color: aqua;
+  text-decoration: none;
+}
+
+body > main > section.contact > p {
+  width: 90%;
+  margin: auto;
+}
+
+section {
+  overflow: hidden;
+}
+
+#particles > div > div > p {
+  font-size: 1.3em;
+  color: #ccc;
+}
+
+#particles > div > a {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  animation: down-arrow 2s ease-in-out infinite alternate;
+}
+
+.scrollbar{
+  height: 0.25rem;
+  background: linear-gradient(to right, #191b29 0%, #191b29 100%);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
